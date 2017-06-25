@@ -1,0 +1,64 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../redux-mixin.html">
+<link rel="import" href="../elements/shared-styles.html">
+<link rel="import" href="../elements/flex-layout-attr.html">
+<link rel="import" href="../elements/ticket-element.html">
+
+
+<dom-module id="tickets-block">
+  <template>
+    <style is="custom-style" include="shared-styles flex flex-alignment positioning"></style>
+
+    <style>
+      :host {
+        display: block;
+        padding: 60px 30px;
+      }
+      ticket-element {
+        margin: 16px;
+      }
+    </style>
+
+    <div class="tickets-wrapper" layout horizontal center-justified wrap>
+        <template is="dom-repeat" items="[[tickets.elements]]" as="ticket">
+          <a href$="[[tickets.url]]" target="_blank" rel="noopener noreferrer">
+            <ticket-element
+              type="[[ticket.name]]"
+              price="[[ticket.price]]"
+              currency="[[ticket.currency]]"
+              starts="[[ticket.starts]]"
+              ends="[[ticket.ends]]"
+              info="[[ticket.info]]"
+              sold-out="[[ticket.soldOut]]">
+            </ticket-element>
+          </a>
+        </template>
+      </div>
+
+  </template>
+
+  <script>
+
+    class TicketsBlock extends ReduxMixin(Polymer.Element) {
+
+      static get is() { return 'tickets-block' }
+
+      static get properties() {
+        return {
+          tickets: {
+            type: Object,
+            statePath: 'tickets'
+          }
+        }
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+        ticketsActions.fetchTickets();
+      }
+    }
+
+    customElements.define(TicketsBlock.is, TicketsBlock);
+  </script>
+</dom-module>

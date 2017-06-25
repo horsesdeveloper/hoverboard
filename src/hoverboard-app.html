@@ -24,6 +24,7 @@
 <link rel="import" href="elements/flex-layout-attr.html">
 <link rel="import" href="elements/hoverboard-icons.html">
 <link rel="import" href="elements/footer-block.html">
+<link rel="import" href="elements/tickets-block.html">
 
 
 <dom-module id="hoverboard-app">
@@ -229,6 +230,7 @@
 
         </app-header>
 
+        <tickets-block></tickets-block>
 
         <footer-block></footer-block>
       </app-header-layout>
@@ -290,9 +292,6 @@
         if (!this.loadComplete) {
           Polymer.RenderStatus.afterNextRender(this, () => {
             Polymer.importHref(this.resolveUrl('lazy-resources.html'), () => {
-              if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/service-worker.js');
-              }
               this.loadComplete = true;
             });
           });

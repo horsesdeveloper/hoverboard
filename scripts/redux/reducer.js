@@ -18,11 +18,19 @@ const routeReducer = (state = initialState.route, action) => {
   }
 };
 
-
 const heroReducer = (state = initialState.hero, action) => {
   switch (action.type) {
     case SET_HERO:
       return action.hero;
+    default:
+      return state;
+  }
+};
+
+const ticketsReducer = (state = initialState.tickets, action) => {
+  switch (action.type) {
+    case FETCH_TICKETS:
+      return action.tickets;
     default:
       return state;
   }

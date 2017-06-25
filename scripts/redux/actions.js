@@ -20,3 +20,14 @@ const routeActions = {
     });
   }
 };
+
+const ticketsActions = {
+  fetchTickets: () => {
+    return firebase.database()
+      .ref('/tickets')
+      .on('value', snapshot => store.dispatch({
+        type: FETCH_TICKETS,
+        tickets: snapshot.val()
+      }));
+  }
+};
