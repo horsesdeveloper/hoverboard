@@ -142,6 +142,10 @@
         _peopleChanged: function () {
           var people = this._toArray(this.people),
             filteredPeople = [];
+
+            console.log("hole");
+            console.log(people);
+
           for (var i = 0, length = people.length; i < length; i++) {
             if (people[i].featured) {
               filteredPeople.push(people[i]);
