@@ -2,10 +2,10 @@
   "title": "GDG DevFest Ukraine 2017",
   "description": "GDG DevFest Ukraine brings together the world class experts in Android, Web and Cloud technologies to Lviv for 2 days of sessions, workshops and showcases. Described by many as 'Google I/O of Ukraine', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
-  "dates": "October 13-14, 2017",
-  "locationAddressShort": "Lviv, Ukraine",
+  "dates": "23 y 24 de Septiembre, 2017",
+  "locationAddressShort": "Lima, Perú",
   "motto": "The biggest Google tech conference in CEE.\nAll about Android, Web, and Cloud.",
-  "playIcon": "See how it was in 2016",
+  "playIcon": "¿Qué es un Devfest?",
   "c4p": "Become a speaker",
   "buyTicket": "Buy ticket",
   "backToTop": "Back to top",
@@ -65,44 +65,18 @@
   "view": "View",
   "highlights": "Highlights",
   "subscribeForUpdates": "Get notified about the conference updates",
-
   "footerBlocks": [
     {
       "title": "For visitors",
       "links": [
         {
-          "text": "Meet the team",
+          "text": "Conoce al equipo",
           "url": "/team/",
-          "newTab": false
-        },
-        {
-          "text": "Code of Conduct",
-          "url": "/cod/",
           "newTab": false
         },
         {
           "text": "Google Developers",
           "url": "https://developers.google.com/",
-          "newTab": true
-        },
-        {
-          "text": "GDG DevFest Ukraine 2013",
-          "url": "http://gdg-devfest-ua.appspot.com/",
-          "newTab": true
-        },
-        {
-          "text": "GDG DevFest Ukraine 2014",
-          "url": "https://dfua14.firebaseapp.com",
-          "newTab": true
-        },
-        {
-          "text": "GDG DevFest Ukraine 2015",
-          "url": "https://dfua15.firebaseapp.com",
-          "newTab": true
-        },
-        {
-          "text": "GDG DevFest Ukraine 2016",
-          "url": "https://dfua16.firebaseapp.com",
           "newTab": true
         }
       ]
@@ -121,8 +95,8 @@
   "contactBlock": {
     "links": [
       {
-        "text": "devfest@gdg.org.ua",
-        "url": "mailto:devfest@gdg.org.ua"
+        "text": "contacto@devfestlima.com",
+        "url": "mailto:contacto@devfestlima.com"
       }
     ]
   },
@@ -130,19 +104,19 @@
   "teamPageText": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Lviv](http://lviv.gdg.org.ua/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with Ukrainian audience to boost development of IT.",
   "statistics": [
     {
-      "counter": 900,
-      "caption": "Attendees"
+      "counter": 1500,
+      "caption": "Asistentes"
     },
     {
       "counter": 2,
-      "caption": "Days"
+      "caption": "Días"
     },
     {
-      "counter": 50,
-      "caption": "Sessions"
+      "counter": 60,
+      "caption": "Charlas"
     },
     {
-      "counter": 4,
+      "counter": 5,
       "caption": "Tracks"
     }
   ],

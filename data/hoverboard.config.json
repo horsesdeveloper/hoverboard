@@ -1,40 +1,40 @@
 {
-  "url": "https://devfest.gdg.org.ua",
-  "startDate": "2017-10-13T09:00:00+03:00",
-  "endDate": "2017-10-14T19:00:00+03:00",
+  "url": "https://devfestopen.firebaseapp.com/",
+  "startDate": "2017-09-23T09:00:00+03:00",
+  "endDate": "2017-09-24T19:00:00+03:00",
   "analytics": {
-    "prod": "UA-43643469-1",
-    "dev": "UA-43643469-9"
+    "prod": "-",
+    "dev": "-"
   },
   "organizer": {
-    "name": "GDG Lviv",
-    "twitter": "gdglviv"
+    "name": "GDG Open",
+    "twitter": "gdgopen"
   },
   "webapp": {
-    "shortName": "DFUA",
+    "shortName": "DevFest Lima",
     "themeColor": "#2196F3",
     "backgroundColor": "#2196F3"
   },
   "firebase": {
-    "name": "hoverboard-firebase",
-    "domain": "hoverboard-firebase.firebaseapp.com",
-    "database": "https://hoverboard-firebase.firebaseio.com",
-    "api": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw",
+    "name": "devfestopen",
+    "domain": "devfestopen.firebaseapp.com",
+    "database": "https://devfestopen.firebaseio.com",
+    "api": "AIzaSyBi_Ac9H9BMqIvngiloR2LTR3-50v1Em70",
     "userSessionsPath": "/userSessions",
     "ratingsPath": "/ratings",
-    "indexedDbSession": "dfua"
+    "indexedDbSession": "devfestopen"
   },
   "mailchimp": {
-    "page": "https://gdg.us11.list-manage.com/subscribe?u=b7e853a79164ddfdbda3ed77b&id=7993e39fbe",
-    "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
-    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+    "page": "-",
+    "url": "-",
+    "name": "-"
   },
-  "hashtag": "dfua",
-  "disqusShortName": "dfua",
-  "email": "devfest@gdg.org.ua",
-  "tweetsSource": "https://dfua-tweets.herokuapp.com/favoritesjson.php?c=10&cache_interval=8000",
-  "partnershipProposition": "https://bit.ly/dfua17-partners",
-  "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en",
+  "hashtag": "devfestlima",
+  "disqusShortName": "devfestlima",
+  "email": "marketing@devfestlima.com",
+  "tweetsSource": "-",
+  "partnershipProposition": "-",
+  "videosSessionsUrl": "-",
   "enableSessionsRating": false,
   "navigation": [
     {
@@ -48,38 +48,42 @@
     {
       "route": "team",
       "permalink": "/team/"
+    },
+    {
+      "route": "speakers",
+      "permalink": "/speakers/"
     }
   ],
   "social": [
     {
       "name": "twitter",
-      "nickname": "devfest_ukraine",
-      "url": "https://twitter.com/devfest_ukraine"
+      "nickname": "GDG Open",
+      "url": "https://twitter.com/gdgopen"
+    },
+    {
+      "name": "gplus",
+      "nickname": "+GDGOpenLimaPeru",
+      "url": "https://plus.google.com/+GDGOpenLimaPeru"
     },
     {
       "name": "facebook",
-      "nickname": "devfest.ukraine",
-      "url": "https://www.facebook.com/devfest.ukraine/"
-    },
-    {
-      "name": "instagram",
-      "nickname": "devfestukraine",
-      "url": "https://www.instagram.com/devfestukraine"
+      "nickname": "GDG Open",
+      "url": "https://www.facebook.com/gdgopen"
     }
   ],
   "location": {
-    "apiKey": "AIzaSyDWy6O98n-ueoVaYPWRPve23vjm3JP08gw",
-    "name": "Pivdennyi Expo Center",
-    "address": "36 Shchyretska St, Lviv, Ukraine",
-    "link": "https://www.facebook.com/expopivdennij",
+    "apiKey": "AIzaSyBi_Ac9H9BMqIvngiloR2LTR3-50v1Em70",
+    "name": "UTEC, Universidad de Ingeniería y Tecnología",
+    "address": "Jr. Medrano Silva 165, Barranco 15063, Perú",
+    "link": "https://www.facebook.com/utecuniversidad",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
-      "zoom": 15
+      "latitude": -12.1351432,
+      "longitude": -77.0221491,
+      "zoom": 17
     },
     "mapCenter": {
-      "latitude": 49.809841,
-      "longitude": 23.982805
+      "latitude": -12.1345978,
+      "longitude": -77.0191665
     },
     "images": [
       "/images/backgrounds/location_1.jpg",
@@ -117,50 +121,33 @@
 
   "pages": {
     "home": {
-      "title": "Home",
+      "title": "Inicio",
       "headerSettings": {
         "backgroundColor": "#2196F3",
         "backgroundImage": "/images/backgrounds/home.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
-          "title": "GDG DevFest Ukraine 2016",
-          "youtubeId": "TdpbgRgz6eE",
-          "text": "See how it was in 2016"
+          "title": "¿Qué es un Devfest?",
+          "youtubeId": "-ccY4i0J5S4",
+          "text": "¿Qué es un Devfest?"
         },
         "hideLogo": true,
         "minHeight": "360px"
       }
     },
-    "blog": {
-      "title": "Blog",
-      "headerSettings": {
-        "backgroundColor": "#03a9f4",
-        "fontColor": "#fff",
-        "tabBarColor": "#fff"
-      }
-    },
     "team": {
-      "title": "Team",
+      "title": "Equipo",
       "headerSettings": {
         "backgroundColor": "#009688",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
     },
-    "cod": {
-      "title": "Cod of Conduct",
+    "speakers": {
+      "title": "Speakers",
       "headerSettings": {
-        "backgroundColor": "#673ab7",
-        "fontColor": "#fff",
-        "tabBarColor": "#fff"
-      }
-    },
-    "gdg-summit": {
-      "title": "Hey GDG Organizer, we are waiting for you at DevFest Ukraine",
-      "headerSettings": {
-        "backgroundColor": "#00838F",
-        "backgroundImage": "/images/backgrounds/gdg-summit.jpg",
+        "backgroundColor": "#3f51b5",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
