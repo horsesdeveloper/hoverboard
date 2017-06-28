@@ -22,7 +22,7 @@
   <template>
 
     <style include="shared-styles">
-      :host {
+       :host {
         display: block;
         background: var(--footer-background-color, #fcfcfc);
         color: var(--footer-text-color, #757575);
@@ -30,7 +30,8 @@
         font-size: 14px;
         --paper-menu-button: {
           padding: 0;
-        };
+        }
+        ;
         --paper-menu-background-color: #fff;
         --paper-menu-button-dropdown-background: #fff;
       }
@@ -165,12 +166,7 @@
 
     <div class="container">
       <div class="footer-content">
-        <iron-image
-          class="gdg-logo"
-          src="/images/gdg-logo.svg"
-          sizing="contain"
-          alt="{$ organizer.name $}"
-        ></iron-image>
+        <iron-image class="gdg-logo" src="/images/gdg-logo.svg" sizing="contain" alt="{$ organizer.name $}"></iron-image>
         <paper-button class="footer-backtotop" on-tap="scrollToTop" noink>
           {$ backToTop $}
           <iron-icon icon="icons:expand-less"></iron-icon>
@@ -179,43 +175,39 @@
       <div class="footer-content footer-links-container">
         <nav class="navigation">
           {% for block in footerBlocks %}
-            <div class="link-block-wrapper">
-              <div class="link-block-title">{$ block.title $}</div>
-              <ul class="link-block">
-                {% for link in block.links %}
-                  <li>
-                    <a href="{$ link.url $}" {% if link.newTab %}target="_blank" rel="noopener noreferrer"{% endif %}>{$ link.text $}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
+          <div class="link-block-wrapper">
+            <div class="link-block-title">{$ block.title $}</div>
+            <ul class="link-block">
+              {% for link in block.links %}
+              <li>
+                <a href="{$ link.url $}" {% if link.newTab %}target="_blank" rel="noopener noreferrer" {% endif %}>{$ link.text $}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
           {% endfor %}
           <div class="link-block-wrapper">
             <div class="link-block-title">{$ contactUs $}</div>
             <ul class="link-block">
               {% for link in contactBlock.links %}
-                <li>
-                  <a href="{$ link.url $}" {% if link.newTab %}target="_blank" rel="noopener noreferrer"{% endif %}>{$ link.text $}</a>
-                </li>
+              <li>
+                <a href="{$ link.url $}" {% if link.newTab %}target="_blank" rel="noopener noreferrer" {% endif %}>{$ link.text $}</a>
+              </li>
               {% endfor %}
             </ul>
             <div class="icons-wrapper align-pb-block">
               {% for network in social %}
-                <a class="button-link" href="{$ network.url $}" target="_blank" rel="noopener noreferrer">
-                  <paper-icon-button icon="{$ network.name $}"></paper-icon-button>
-                </a>
+              <a class="button-link" href="{$ network.url $}" target="_blank" rel="noopener noreferrer">
+                <paper-icon-button icon="{$ network.name $}"></paper-icon-button>
+              </a>
               {% endfor %}
             </div>
           </div>
-          <div class="subscribe">
+          <!-- <div class="subscribe">
             <div class="link-block-title">{$ subscribe $}</div>
             <span>{$ subscribeNote $}</span>
-            <mailchimp-subscribe
-              app="[[app]]"
-              url="{$ mailchimp.url $}"
-              name="{$ mailchimp.name $}"
-            ></mailchimp-subscribe>
-          </div>
+            <mailchimp-subscribe app="[[app]]" url="{$ mailchimp.url $}" name="{$ mailchimp.name $}"></mailchimp-subscribe>
+          </div> -->
         </nav>
       </div>
       <div class="footer-content footer-bottom">
@@ -226,13 +218,8 @@
           Zasadnyy</a> &middot;
           <a href="http://lviv.gdg.org.ua" target="_blank" rel="noopener noreferrer">GDG Lviv</a>
         </div>
-        <div class="gplus">
-          <g:plusone
-            size="medium"
-            width="200"
-            annotation="inline"
-            href="{$ url $}"
-          ></g:plusone>
+        <!-- <div class="gplus">
+          <g:plusone size="medium" width="200" annotation="inline" href="{$ url $}"></g:plusone>
         </div>
 
         <paper-menu-button vertical-align="bottom" horizontal-align="left" share-menu>
@@ -255,7 +242,7 @@
               {$ copyLink $}
             </paper-icon-item>
           </div>
-        </paper-menu-button>
+        </paper-menu-button> -->
       </div>
     </div>
 

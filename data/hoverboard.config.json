@@ -42,8 +42,8 @@
       "permalink": "/"
     },
     {
-      "route": "blog",
-      "permalink": "/blog/"
+      "route": "schedule",
+      "permalink": "/schedule/"
     },
     {
       "route": "team",
@@ -136,6 +136,14 @@
       "title": "Equipo",
       "headerSettings": {
         "backgroundColor": "#009688",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "schedule": {
+      "title": "Agenda",
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
