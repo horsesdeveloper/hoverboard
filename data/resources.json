@@ -42,12 +42,12 @@
   "clearAll": "Clear all",
   "filter": "Filter",
   "latestNews": "Últimas noticias",
-  "continueReading": "Seguir leyendo",
+  "continueReading": "Leer más",
   "viewPresentation": "Ver presentación",
   "viewVideo": "Ver video",
   "skills": "Habilidades",
   "share": "Share",
-  "shareWith": "Share with",
+  "shareWith": "Compartir en",
   "signIn": "Inicia sesión",
   "signOut": "Cerrar sesión",
   "mySchedule": "My Schedule",
@@ -85,8 +85,8 @@
       "title": "Info Partners",
       "links": [
         {
-          "text": "Propuesta",
-          "url": "https://bit.ly/dfua17-partners",
+          "text": "DevFest Lima Empresas",
+          "url": "http://bit.ly/DevFestLimaEmpresas",
           "newTab": true
         }
       ]
