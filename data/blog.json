@@ -1,47 +1,29 @@
 [
   {
-    "id": "dfua-summary",
-    "title": "DevFest Ukraine rocked - SUMMARY",
-    "posted": "2016-09-10",
-    "primaryColor": "#ffc107",
-    "secondaryColor": "#edb305",
-    "image": "/images/posts/summary16_1.jpg",
-    "brief": "GDG DevFest Ukraine 2016 - it was fun, advantageous, crowded and exciting event..."
-  },
-  {
-    "id": "thank-you",
-    "title": "Thank you all for your support",
-    "posted": "2016-09-29",
-    "primaryColor": "#5a7785",
-    "secondaryColor": "#455a64",
-    "image": "/images/posts/thankyou_2.jpg",
-    "brief": "Our team wants to thank one more time our partners, who made GDG DevFest Ukraine 2016 possible..."
-  },
-  {
     "id": "dfua17-announced",
-    "title": "Announcing GDG DevFest Ukraine 2017",
+    "title": "GDG DevFest Lima 2017 confirmado",
     "posted": "2017-02-06",
     "primaryColor": "#2196F3",
     "secondaryColor": "#1d8fea",
     "image": "/images/posts/dfua17-announced.jpg",
-    "brief": "It is official. GDG DevFest Ukraine 2017 is going to take place in Lviv, on October 13-14."
+    "brief": "Es Oficial. GDG DevFest Lima 2017 va a realizarse en la UTEC, el 23 y 24 de Setiembre."
   },
   {
     "id": "c4p",
-    "title": "We're looking for speakers",
+    "title": "Estamos buscando Partners",
     "posted": "2017-02-12",
     "primaryColor": "#3647a5",
     "secondaryColor": "#673AB7",
     "image": "/images/posts/c4p.jpg",
-    "brief": "GDG DevFest Ukraine was announced, for the sixth year in a row, the conference will bring together 900 developers, managers and..."
+    "brief": "GDG DevFest Lima 2017 ha sido anunciado por 4 año consecutivo y esta conferencia concentrará mas de 500 programadores, ingenieros y ..."
   },
   {
     "id": "first-speakers-announced",
-    "title": "First 3 speakers announced",
+    "title": "Speakers anunciados",
     "posted": "2017-04-13",
     "primaryColor": "#4CAF51",
     "secondaryColor": "#4CAF51",
     "image": "/images/posts/first-speakers-announced.jpg",
-    "brief": "Can you believe this? Exactly 6 months are left till GDG DevFest Ukraine 2017 and we are excited to announce our first speakers!"
+    "brief": "Exactamente faltan 2 meses para que empiece el GDG DevFest Lima 2017 y ya tenemos nuestros speakers confirmados!"
   }
 ]

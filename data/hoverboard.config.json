@@ -32,10 +32,10 @@
   "hashtag": "devfest17lima",
   "disqusShortName": "devfestlima",
   "email": "marketing@devfestlima.com",
-  "tweetsSource": "-",
-  "partnershipProposition": "-",
+  "tweetsSource": "https://devfestlima-tweets.herokuapp.com/favoritesjson.php?c=50&user=gdgopen&cache_interval=8000",
+  "partnershipProposition": "http://bit.ly/DevFestLimaEmpresas",
   "videosSessionsUrl": "https://www.youtube.com/results?search_query=devfest",
-  "enableSessionsRating": false,
+  "enableSessionsRating": true,
   "navigation": [
     {
       "route": "home",
