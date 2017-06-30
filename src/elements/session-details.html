@@ -101,13 +101,13 @@
         </div>
       </paper-toolbar>
       <div class="content">
-        <paper-fab
+        <!-- <paper-fab
           class$="float-button header-action [[fabIcon]]"
           icon="[[fabIcon]]"
           session-id$="[[session.id]]"
           on-tap="toggleMyScheduleSession"
           disabled$="[[!online]]"
-        ></paper-fab>
+        ></paper-fab> -->
 
         <div class="metadata-wrapper">
           <div class="main-info">
@@ -131,7 +131,7 @@
           <div class="markdown-html"></div>
         </marked-element>
 
-        <div class="actions">
+        <!-- <div class="actions">
           <paper-menu-button class="share-menu" horizontal-align="left" vertical-align="bottom" share-menu>
             <paper-button class="action dropdown-trigger">
               <iron-icon icon="share"></iron-icon>
@@ -172,7 +172,7 @@
               {$ viewVideo $}
             </paper-button>
           </div>
-        </div>
+        </div> -->
 
         {% if enableSessionsRating %}
         <div class="label">{$ rateSession $}</div>

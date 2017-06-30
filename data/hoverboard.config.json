@@ -35,7 +35,7 @@
   "tweetsSource": "https://devfestlima-tweets.herokuapp.com/favoritesjson.php?c=50&user=gdgopen&cache_interval=8000",
   "partnershipProposition": "http://bit.ly/DevFestLimaEmpresas",
   "videosSessionsUrl": "https://www.youtube.com/results?search_query=devfest",
-  "enableSessionsRating": true,
+  "enableSessionsRating": false,
   "navigation": [
     {
       "route": "home",

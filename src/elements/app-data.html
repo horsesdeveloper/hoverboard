@@ -198,7 +198,7 @@
             || !Object.keys(this._sessionsRaw).length
             || !Object.keys(this._scheduleRaw).length) return;
 
-          var myWorker = new Worker('./scripts/helper/schedule-webworker.js');
+          var myWorker = new Worker(verifyWebWorker());
 
           myWorker.postMessage({
             speakers: this._speakersRaw,
@@ -219,6 +219,21 @@
           this.posts = response.detail.response.reverse();
         }
       });
+
+      var verifyWebWorker = function() {
+        var url1 = './scripts/helper/schedule-webworker.js';
+        var url2 = './../scripts/helper/schedule-webworker.js';
+
+        var verifyRequest = new XMLHttpRequest();
+        verifyRequest.open('HEAD', url1, false);
+        verifyRequest.send();
+
+        if (verifyRequest.status == 404) {
+            return url2
+        }
+
+        return url1;
+      }
 
     }());
   </script>
