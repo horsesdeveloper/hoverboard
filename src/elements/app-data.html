@@ -194,46 +194,31 @@
         },
 
         _generateSchedule: function () {
-          if (!Object.keys(this._speakersRaw).length
-            || !Object.keys(this._sessionsRaw).length
-            || !Object.keys(this._scheduleRaw).length) return;
-
-          var myWorker = new Worker(verifyWebWorker());
-
-          myWorker.postMessage({
-            speakers: this._speakersRaw,
-            sessions: this._sessionsRaw,
-            schedule: this._scheduleRaw
-          });
-
-          myWorker.addEventListener('message', function (e) {
-            this.set('schedule', e.data.schedule);
-            this.set('sessions', e.data.sessions);
-            this.set('speakers', e.data.speakers);
-            myWorker.terminate();
-          }.bind(this), false);
-
-        },
-
-        _reversePosts: function (response) {
-          this.posts = response.detail.response.reverse();
-        }
-      });
-
-      var verifyWebWorker = function() {
-        var url1 = './scripts/helper/schedule-webworker.js';
-        var url2 = './../scripts/helper/schedule-webworker.js';
-
-        var verifyRequest = new XMLHttpRequest();
-        verifyRequest.open('HEAD', url1, false);
-        verifyRequest.send();
-
-        if (verifyRequest.status == 404) {
-            return url2
-        }
-
-        return url1;
+        if (!Object.keys(this._speakersRaw).length
+          || !Object.keys(this._sessionsRaw).length
+          || !Object.keys(this._scheduleRaw).length) return;
+            
+        var myWorker = new Worker('../scripts/helper/schedule-webworker.js');
+            
+        myWorker.postMessage({
+          speakers: this._speakersRaw,
+          sessions: this._sessionsRaw,
+          schedule: this._scheduleRaw
+        });
+            
+        myWorker.addEventListener('message', function(e) {
+          this.set('schedule', e.data.schedule);
+          this.set('sessions', e.data.sessions);
+          this.set('speakers', e.data.speakers);
+          myWorker.terminate();
+        }.bind(this), false);
+            
+      },
+          
+      _reversePosts: function (response) {
+        this.posts = response.detail.response.reverse();
       }
+    });
 
     }());
   </script>
