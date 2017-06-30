@@ -93,7 +93,7 @@
       <h4 class="heading">{$ featuredPeopleTitle $}</h4>
       <div class="people-wrapper">
         <template is="dom-repeat" items="[[featuredPeople]]" as="person">
-          <div class="person">
+          <a href$="/speakers/[[person.id]]" class="person">
             <iron-image
               class="photo"
               src="[[person.photoUrl]]"
@@ -106,16 +106,14 @@
             ></iron-image>
             <h4 class="name">[[person.name]]</h4>
             <span class="company">[[person.country]]</span>
-          </div>
+          </a>
         </template>
       </div>
-
       <div>
-        <a href="/blog/posts/c4p/" class="block-link">
-          <paper-button>{$ c4p $}</paper-button>
+        <a href="/speakers" class="block-link">
+          <paper-button>{$ featuredPeopleViewAll $}</paper-button>
         </a>
       </div>
-       
     </div>
 
   </template>
@@ -142,10 +140,6 @@
         _peopleChanged: function () {
           var people = this._toArray(this.people),
             filteredPeople = [];
-
-            console.log("hole");
-            console.log(people);
-
           for (var i = 0, length = people.length; i < length; i++) {
             if (people[i].featured) {
               filteredPeople.push(people[i]);
