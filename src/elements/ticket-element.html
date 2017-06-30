@@ -144,6 +144,7 @@
       <div class="side-content">[[type]]</div>
     </div>
     <div class="overlay" hidden$="{{!soldOut}}">[[soldOutText]]</div>
+    <div class="overlay" hidden$="{{!closed}}">[[closedText]]</div>
   </template>
 
   <script>
@@ -180,6 +181,11 @@
           },
 
           soldOut: {
+            type: Boolean,
+            value: false
+          },
+
+          closed: {
             type: Boolean,
             value: false
           },
