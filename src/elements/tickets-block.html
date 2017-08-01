@@ -78,8 +78,7 @@
       <div class="tickets-wrapper">
         <template is="dom-repeat" items="[[app.tickets.elements]]" as="ticket">
 
-          <!-- <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]"> -->
-          <a rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]">
+          <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]">
             <ticket-element
               type="[[ticket.name]]"
               price="[[ticket.price]]"
