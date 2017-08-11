@@ -71,15 +71,13 @@
       }
     </style>
 
-    <div class="container">
+   <div class="container">
       <div class="block-header">
         <h4 class="heading">{$ ticketsTitle $}</h4>
       </div>
       <div class="tickets-wrapper">
         <template is="dom-repeat" items="[[app.tickets.elements]]" as="ticket">
-
-          <!-- <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]"> -->
-          <a rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]">
+          <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info$="[[ticket.price]]">
             <ticket-element
               type="[[ticket.name]]"
               price="[[ticket.price]]"
@@ -96,12 +94,12 @@
         </template>
       </div>
       <div class="details">{$ ticketsDetails $}</div>
-      <!-- TODO <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info="button">
+      <a href$="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick" ga-info="button">
         <paper-button class="buy-button" raised>
           <iron-icon icon="ticket"></iron-icon>
           {$ buyTicket $}
         </paper-button>
-      </a> -->
+      </a>
     </div>
 
   </template>

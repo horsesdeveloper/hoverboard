@@ -33,13 +33,17 @@
   "disqusShortName": "devfestlima",
   "email": "marketing@devfestlima.com",
   "tweetsSource": "https://devfestlima-tweets.herokuapp.com/favoritesjson.php?c=50&user=gdgopen&cache_interval=8000",
-  "partnershipProposition": "http://bit.ly/DevFestLimaEmpresas",
+  "partnershipProposition": "https://goo.gl/cRwv8G",
   "videosSessionsUrl": "https://www.youtube.com/results?search_query=devfest",
   "enableSessionsRating": false,
   "navigation": [
     {
       "route": "home",
       "permalink": "/"
+    },
+    {
+      "route": "blog",
+      "permalink": "/blog/"
     },
     {
       "route": "schedule",
@@ -67,8 +71,8 @@
     },
     {
       "name": "facebook",
-      "nickname": "GDG Open",
-      "url": "https://www.facebook.com/gdgopen"
+      "nickname": "DevFest Lima",
+      "url": "https://www.facebook.com/DevFestLima/"
     }
   ],
   "location": {
@@ -92,28 +96,28 @@
     ]
   },
   "gallery": {
-    "albumUrl": "https://www.facebook.com/hashtag/devfest16lima",
-    "sharedAlbumUrl": "https://www.facebook.com/hashtag/devfest17lima",
+    "albumUrl": "https://goo.gl/photos/2VpWZYuyP7rtKQSw7;",
+    "sharedAlbumUrl": "https://goo.gl/photos/2VpWZYuyP7rtKQSw7;",
     "photos": [
       {
-        "big": "/images/backgrounds/2016_1.jpg",
+        "big": "/images/backgrounds/2016_20.jpg",
         "small": [
-          "/images/backgrounds/2016_2.jpg",
+          "/images/backgrounds/2016_19.jpg",
           "/images/backgrounds/2016_3.jpg"
         ]
       },
       {
-        "big": "/images/backgrounds/2016_4.jpg",
+        "big": "/images/backgrounds/2016_13.jpg",
         "small": [
-          "/images/backgrounds/2016_5.jpg",
-          "/images/backgrounds/2016_6.jpg"
+          "/images/backgrounds/2016_8.jpg",
+          "/images/backgrounds/2016_18.jpg"
         ]
       },
       {
-        "big": "/images/backgrounds/2016_7.jpg",
+        "big": "/images/backgrounds/2016_10.jpg",
         "small": [
-          "/images/backgrounds/2016_8.jpg",
-          "/images/backgrounds/2016_9.jpg"
+          "/images/backgrounds/2016_17.jpg",
+          "/images/backgrounds/2016_12.jpg"
         ]
       }
     ]
@@ -134,6 +138,14 @@
         },
         "hideLogo": true,
         "minHeight": "360px"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "headerSettings": {
+        "backgroundColor": "#03a9f4",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
       }
     },
     "team": {
