@@ -17,7 +17,7 @@ Te regalaremos tu Pack de Bienvenida y un Cardboard para vivir al máximo tu exp
 
 <div class="text-center">
 <a href="http://bit.ly/DevFestLima2017" target="_blank" class="style-scope header-content" style="color: white; ">
-  <paper-button class="primary style-scope header-content x-scope paper-button-0" raised="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1"><iron-icon icon="ticket" style="margin-right: 8px;"></iron-icon> Adquiere tus entradas</paper-button>
+  <paper-button class="primary style-scope header-content x-scope paper-button-0" raised="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1"><iron-icon icon="ticket" style="margin-right: 8px;"></iron-icon>Adquiere tus entradas</paper-button>
 </a>
 </div>
 
