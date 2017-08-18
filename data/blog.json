@@ -1,21 +1,12 @@
 [
   {
-    "id": "dfua17-announced",
+    "id": "devfestlima17-announced",
     "title": "GDG DevFest Lima 2017 confirmado",
     "posted": "2017-02-06",
     "primaryColor": "#2196F3",
     "secondaryColor": "#1d8fea",
-    "image": "/images/posts/dfua17-announced.jpg",
+    "image": "/images/posts/devfestlima17-announced.jpg",
     "brief": "Es Oficial. GDG DevFest Lima 2017 va a realizarse en la UTEC, el 23 y 24 de Setiembre."
-  },
-  {
-    "id": "c4p",
-    "title": "Estamos buscando Partners",
-    "posted": "2017-02-12",
-    "primaryColor": "#3647a5",
-    "secondaryColor": "#673AB7",
-    "image": "/images/posts/c4p.jpg",
-    "brief": "GDG DevFest Lima 2017 ha sido anunciado por 4 año consecutivo y esta conferencia concentrará mas de 500 programadores, ingenieros y ..."
   },
   {
     "id": "first-speakers-announced",
@@ -24,6 +15,15 @@
     "primaryColor": "#4CAF51",
     "secondaryColor": "#4CAF51",
     "image": "/images/posts/first-speakers-announced.jpg",
-    "brief": "Exactamente faltan 3 meses para que empiece el GDG DevFest Lima 2017 y ya tenemos nuestros speakers confirmados!"
+    "brief": "Exactamente faltan 3 meses para que empiece el GDG DevFest Lima 2017 y ya tenemos nuestros primeros speakers confirmados!"
+  },
+  {
+    "id": "official-announcement",
+    "title": "Comunicado Oficial",
+    "posted": "2017-08-10",
+    "primaryColor": "#f44336",
+    "secondaryColor": "#f44336",
+    "image": "/images/posts/official-announcement.jpg",
+    "brief": "Estimados seguidores del #DevFest2017 en Perú, nos gustaría poder compartir este Comunicado Oficial con todos ustedes."
   }
 ]

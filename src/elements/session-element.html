@@ -141,6 +141,19 @@
         margin-right: 8px;
       }
 
+      .tag-icon {
+        --iron-icon-width: 14px;
+        --iron-icon-height: 14px;
+        margin-right: 4px;
+      }
+      .photo {
+        @apply(--img-circle);
+        margin-right: 4px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+      }
+
       .speaker {
         margin: 4px 0;
       }
@@ -179,7 +192,7 @@
           <div class="session-content" flex>
             <h2 class="session-title">[[session.title]]</h2>
             <ul class="session-meta">
-              <li hidden$="[[!session.language]]">[[session.language]]</li>
+               <!--<li hidden$="[[!session.language]]">[[session.language]]</li> -->
               <li hidden$="[[!session.complexity]]">[[session.complexity]]</li>
               <li hidden$="[[!session.track.title]]">[[session.track.title]]</li>
             </ul>
@@ -225,14 +238,13 @@
 
             <template is="dom-repeat" items="[[session.speakers]]" as="speaker">
               <div class="speaker" layout horizontal center>
-                <iron-icon icon="account"></iron-icon>
+                <div class="photo" style$="background-image: url('[[speaker.photoUrl]]')"></div>
                 <div class="person-detail" flex>
                   <span class="speaker-name">[[speaker.name]]</span>
                   <div class="speaker-title">[[speaker.company]] / [[speaker.country]]</div>
                 </div>
               </div>
             </template>
-
           </div>
 
         </div>

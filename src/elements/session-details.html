@@ -115,9 +115,9 @@
               <h1 class="main-title">[[session.title]]</h1>
               <div class="meta highlight">[[session.dateReadable]] / [[session.startTime]] - [[session.endTime]] /
                 [[session.track.title]]
-                <span hidden$="[[!session.language]]">
+                <!--<span hidden$="[[!session.language]]">
                   / [[session.language]]
-                </span>
+                </span>-->
                 <span hidden$="[[!session.complexity]]">
                   / [[session.complexity]]
                 </span>
@@ -131,7 +131,7 @@
           <div class="markdown-html"></div>
         </marked-element>
 
-        <!-- <div class="actions">
+        <div class="actions">
           <paper-menu-button class="share-menu" horizontal-align="left" vertical-align="bottom" share-menu>
             <paper-button class="action dropdown-trigger">
               <iron-icon icon="share"></iron-icon>
@@ -172,7 +172,7 @@
               {$ viewVideo $}
             </paper-button>
           </div>
-        </div> -->
+        </div>
 
         {% if enableSessionsRating %}
         <div class="label">{$ rateSession $}</div>
