@@ -124,6 +124,7 @@
       speakers="{{speakers}}"
       sessions="{{sessions}}"
       schedule="{{schedule}}"
+      workshops="{{workshops}}"
       posts="{{posts}}"
     ></app-data>
 
@@ -191,6 +192,12 @@
                          route="{{subRoute}}"
                          schedule="{{schedule}}"
                          sessions="{{sessions}}"></schedule-page>
+                         
+          <workshops-page name="workshops"
+                        app="{{app}}"
+                        route="{{subRoute}}"
+                        workshops="{{workshops}}"
+                        sessions="{{sessions}}"></workshops-page>
 
           <team-page name="team"
                      app="{{app}}"></team-page>

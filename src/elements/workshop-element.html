@@ -8,10 +8,10 @@
 <link rel="import" href="../../bower_components/app-storage/app-network-status-behavior.html">
 
 <link rel="import" href="../behaviors/utils-behavior.html">
-<link rel="import" href="../behaviors/my-schedule-behavior.html">
+<link rel="import" href="../behaviors/my-workshops-behavior.html">
 
 
-<dom-module id="session-element">
+<dom-module id="workshop-element">
 
   <template>
 
@@ -175,7 +175,7 @@
 
     <a
       class="session"
-      href$="/schedule/[[dayName]]?sessionId=[[session.id]]"
+      href$="/workshops/[[dayName]]?sessionId=[[session.id]]"
       with-background$="[[session.image]]"
       wide$="{{!app.isPhoneSize}}"
       layout flex-auto
@@ -192,9 +192,9 @@
           <div class="session-content" flex>
             <h2 class="session-title">[[session.title]]</h2>
             <ul class="session-meta">
-               <!-- <li hidden$="[[!session.language]]">[[session.language]]</li> -->
+               <!--<li hidden$="[[!session.language]]">[[session.language]]</li> -->
               <li hidden$="[[!session.complexity]]">[[session.complexity]]</li>
-              <!-- <li hidden$="[[!session.track.title]]">[[session.track.title]]</li> -->
+              <li hidden$="[[!session.track.title]]">[[session.track.title]]</li>
             </ul>
           </div>
 
@@ -259,12 +259,12 @@
 
       Polymer({
 
-        is: 'session-element',
+        is: 'workshop-element',
 
         behaviors: [
           Polymer.AppNetworkStatusBehavior,
           HOVERBOARD.UtilsBehavior,
-          HOVERBOARD.MyScheduleBehavior
+          HOVERBOARD.MyWorkshopsBehavior
         ],
 
         properties: {
@@ -313,7 +313,7 @@
         },
 
         _getMyScheduleIcon: function (id) {
-          this.myScheduleIcon = this.isInMySchedule(id) ? 'calendar-check' : 'calendar-plus';
+          this.myScheduleIcon = this.isInMyWorkshops(id) ? 'calendar-check' : 'calendar-plus';
         },
 
         _userUpdated: function (user) {

@@ -63,6 +63,20 @@
       persisted-data="{{_scheduleRaw}}">
     </app-indexeddb-mirror>
 
+    <firebase-document
+      id="queryWorkshops"
+      app-name="{$ firebase.name $}"
+      path="/workshops"
+      data="{{_firebaseWorkshops}}">
+    </firebase-document>
+
+    <app-indexeddb-mirror
+      session="{$ firebase.indexedDbSession $}"
+      key="workshops"
+      data="{{_firebaseWorkshops}}" 
+      persisted-data="{{_workshopsRaw}}">
+    </app-indexeddb-mirror>
+
     <firebase-query
       id="queryPartners"
       app-name="{$ firebase.name $}"
@@ -172,6 +186,11 @@
             notify: true
           },
 
+          workshops: {
+            type: Array,
+            notify: true
+          },
+
           _speakersRaw: {
             type: Object
           },
@@ -182,11 +201,15 @@
 
           _scheduleRaw: {
             type: Array
+          },
+
+          _workshopsRaw: {
+            type: Array
           }
         },
 
         observers: [
-          '_generateSchedule(_speakersRaw, _sessionsRaw, _scheduleRaw)'
+          '_generateSchedule(_speakersRaw, _sessionsRaw, _scheduleRaw, _workshopsRaw)'
         ],
 
         ready: function () {
@@ -196,17 +219,20 @@
         _generateSchedule: function () {
         if (!Object.keys(this._speakersRaw).length
           || !Object.keys(this._sessionsRaw).length
-          || !Object.keys(this._scheduleRaw).length) return;
+          || !Object.keys(this._scheduleRaw).length
+          || !Object.keys(this._workshopsRaw).length) return;
             
         var myWorker = new Worker('../scripts/helper/schedule-webworker.js');
             
         myWorker.postMessage({
           speakers: this._speakersRaw,
           sessions: this._sessionsRaw,
-          schedule: this._scheduleRaw
+          schedule: this._scheduleRaw,
+          workshops: this._workshopsRaw
         });
             
         myWorker.addEventListener('message', function(e) {
+          this.set('workshops', e.data.workshops);
           this.set('schedule', e.data.schedule);
           this.set('sessions', e.data.sessions);
           this.set('speakers', e.data.speakers);
